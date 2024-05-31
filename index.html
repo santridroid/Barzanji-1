@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+		<title>Maulid</title>
+	</head>
+
+	<body>
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		
+		<style type="text/css"> 
+			@font-face {font-family: 'LPMQ Isep Misbah'; src: url('LPMQ_IsepMisbah.ttf');}
+			@font-face {font-family: 'KFGQPC Uthmanic Script HAFS'; src: url('UthmanicHafs1 Ver09.otf');}
+			@font-face {font-family: 'KFGQPC_Naskh'; src: url('KFC_naskh.eot'); src: local('KFGQPC Uthman Taha Naskh'), url('KFC_naskh.otf') format('opentype');}
+		</style>
+
+		<!-- for the one page layout -->
+		<style type="text/css">
+			section
+			{
+				border-top: 1px solid #ccc;
+				padding: 150px 0 200px;
+			}
+			section:first-child
+			{
+				border-top: none;
+				padding-top: 0;
+			}
+		</style>
+		
+		<!-- for the fixed header -->
+		<style type="text/css">
+			.header,
+			.footer
+			{
+				position: fixed;
+				left: 0;
+				right: 0;
+			}
+			.header
+			{
+				top: 0;
+			}
+			.footer
+			{
+				bottom: 0;
+			}
+			@media (min-width: 2000px) {
+				.header a
+				{
+					display: none;
+				}
+			}
+		</style>
+		
+		<script type="text/javascript" src="jquery.min.js">
+			
+		</script>
+
+		<script type="text/javascript">
+			$(function () {
+				$(".font-button").bind("click", function () {
+					var size = parseInt($('body').css("font-size"));
+					if ($(this).hasClass("plus")) {
+						size = size + 2;
+					} else {
+						size = size - 2;
+						if (size <= 10) {
+							size = 10;
+						}
+					}
+					$('body').css("font-size", size);
+				});
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(function () {
+				$(".font-button").bind("click", function () {
+					var size = parseInt($('#content').css("font-size"));
+					if ($(this).hasClass("plus")) {
+						size = size + 2;
+					} else {
+						size = size - 2;
+						if (size <= 10) {
+							size = 10;
+						}
+					}
+					$('#content').css("font-size", size);
+				});
+			});
+		</script>
+		
+		<script>
+			$(document).ready(function(){
+			$("#hide").click(function(){
+				$("p").hide();
+			});
+			$("#show").click(function(){
+				$("p").show();
+			});
+			});
+		</script>
+		
+		<script>
+			function DarkMode()
+			{var element = document.body;
+				element.classList.toggle("dark-mode");}
+		</script>
+
+		<div id="page">
+			<div class="header Fixed">
+				
+			</div>
+		</div>
+			
+		<button id="show" style="position: fixed; top: 9px; left: 10px;">Arab + Latin</button>
+		<a class="font-button minus"><img style="position: fixed; top: 7px; left: 30%; width: 30px;" src="zoom-.png"/></a>
+		<center><a onclick="DarkMode()"><img style="position: fixed; top: 7px; width: 30px;" src="darkmode.png"/></a></center>
+		<a class="font-button plus"><img style="position: fixed; top: 7px; right: 30%; width: 30px;" src="zoom+.png"/></a>
+		<button id="hide" style="position: fixed; top: 9px; right: 10px;">Arab saja</button>
+	
+
+		<div class="content" id="content">
+			<br/>
+			<div>
+			<center>
+				<audio
+				  style="
+					position: fixed;
+					transform: translate(-50%, -50%);
+					width: 90%;
+					height: 45px;
+					background: #c0d6ac;
+					padding: 1px;
+					border-radius: 25px;
+				  "
+				  controls="controls"
+				  controlsList="nodownload"
+				>
+				<source src="https://archive.org/download/hq-barzanji_202306/1 Ya Robbi Sholli ala Muhammad.mp3" type="audio/mp3" />
+				</audio>
+			</center>
+			</div>
+			<br/>
+
+<div class="arab3center">
+بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+</div>
+<left>
+<p><center>Dengan menyebut nama Allah Yang Maha Pengasih lagi Maha Penyayang</center></p>
+</p><div class="arab4">
+يَارَبِّ صَلِّ عَلىٰ مُحَمَّدْ       ۞       يَارَبِّ صَلِّ عَلَيْهِ وَسَلِّمْ
+</div><p>
+Ya Allah, tetapkanlah limpahan shalawat kepada Nabi Muhammad<br/>
+Ya Allah, tetapkanlah limpahan shalawat dan salam kepadanya
+</p><div class="arab4">
+يَارَبِّ بَلِّغْهُ الْوَسِيْلَةْ       ۞      يَارَبِّ خُصَّهُ بِالْفَضِيْلَةْ
+</div><p>Ya Allah, sampaikanlah kepadanya sebagai perantara<br/>
+Ya Allah, khususkanlah kepadanya dengan keutamaan
+</p><div class="arab4">
+يَارَبِّ وَارْضَ عَنِ الصَّحَابَةْ     ۞      يَارَبِّ وَارْضَ عَنِ السُّلَا لَةْ
+</div><p>Ya Allah, anugerahkanlah keridhoan kepada sahabatnya<br/>
+Ya Allah, anugerahkanlah keridhoan kepada keturunannya
+</p><div class="arab4">
+يَارَبِّ وَرْاضَ عَنِ الْمَشَايِخْ          ۞      يَارَبِّ وَارْحَمْ وَالِدِيْنَا
+</div><p>Ya Allah, anugerahkanlah keridhon kepada para guru<br/>
+Ya Allah, rahmatilah orang tua kami
+</p><div class="arab4">
+يَارَبِّ وَارْحَمْنَا جَمِيْعًا         ۞      يَارَبِّ وَارْحَمْ كُلَّ مُسْلِمْ
+</div><p>Ya Allah, rahmatilah kami semua<br/>
+Ya Allah, rahmatilah semua orang islam
+</p><div class="arab4">
+يَارَبِّ وَاغْفِرْ لِكُلِّ مُذْنِبْ      ۞      يَارَبِّ لاَ تَقْطَعْ رَجَانَا
+</div><p>Ya Allah, ampunilah semua orang yang berbuat dosa<br/>
+Ya Allah, janganlah Engkau putuskan harapan kami
+</p><div class="arab4">
+يَارَبِّ يَا سَامِعْ دُعَانَا      ۞      يَارَبِّ بَلِّغْنَا نَزُوْرُهْ
+</div><p>Ya Allah, wahai Dzat Yang Maha Mendengar doa kami<br/>
+Ya Allah, sampaikan kami ziarah ke makamnya
+</p><div class="arab4">
+يَارَبِّ تَغْشَانَا بِنُوْرِهْ         ۞      يَارَبِّ خِفْظَانَكْ وَاَمَانَكْ
+</div><p>Ya Allah, sinarilah kami dengan nurnya<br/>
+Ya Allah, aku selalu mengharap pemeliharaan dan keamanan-Mu
+</p><div class="arab4">
+يَارَبِّ وَاسْكِنَّا جِنَانَكْ     ۞      يَارَبِّ اَجِرْنَا مِنْ عَذَابِكْ
+</div><p>Ya Allah, tempatkanlah kami dalam surga-Mu<br/>
+Ya Allah, selamatkanlah kami dari siksa-Mu
+</p><div class="arab4">
+يَارَبِّ وَارْزُقْنَا الشَّهَادَةْ   ۞      يَارَبِّ حِطْنَا بِالسَّعَادَةْ
+</div><p>Ya Allah, anugerahilah kami dengan kematian yang syahid<br/>
+Ya Allah, liputilah kehidupan kami dengan penuh kebahagiaan
+</p><div class="arab4">
+يَارَبِّ وَاصْلِحْ كُلَّ مُصْلِحْ    ۞      يَارَبِّ وَاكْفِ كُلَّ مُؤْذِيْ
+</div><p>Ya Allah, balaslah kebaikan orang yang berbuat kebaikan<br/>
+Ya Allah, hindarkanlah dari semua orang yang menyakiti
+</p><div class="arab4">
+يَارَبِّ نَخْتِمْ بِالْمُشَفَّعْ        ۞      يَارَبِّ صَلِّ عَلَيْهِ وَسَلِّمْ
+</div><p>Ya Allah, akhirilah kami dengan mendapat syafa'at Nabi Muhammad<br/>
+Ya Allah, tetapkanlah limpahan shalawat dan salam kepada Nabi Muhammad
+</p>
+</left>
+<br/><br/><br/><br/><br/>
+
+		</div>
+
+	</body>
+</html>
